@@ -4,7 +4,7 @@
 zuul:
   routes:
     ribbon-route:
-      path: /ribbon/**
+      path: /account/**
       serviceId: ribbon-route
 
 ribbon:
@@ -13,6 +13,4 @@ ribbon:
 
 ribbon-route:
   ribbon:
-    NIWSServerListClassName: com.netflix.loadbalancer.ConfigurationBasedServerList
-    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule     #Ribbon LB Strategy
-    listOfServers: localhost:7070,localhost:7071     #client services for Ribbon LB
+    listOfServers:  http://news.baidu.com/ ,http://news.baidu.com/
